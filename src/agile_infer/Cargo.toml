@@ -1,0 +1,22 @@
+[package]
+name = "agile_infer"
+version = "0.1.0"
+authors = ["me"]
+edition = "2018"
+
+[dependencies]
+clap = "2.33"
+prost = "0.7"
+tonic = "0.4"
+tokio = {version = "1", features = ["full"]}
+log = "0.4"
+env_logger = "0.8"
+lz4_flex = { version = "0.7", default-features = false }
+orchestrator = {path = "../orchestrator"}
+clockwork = { path = "../clockwork" }
+cuda_manager = { path = "../cuda_manager" }
+crossbeam = "0.8"
+
+
+[build-dependencies]
+tonic-build = "0.4"

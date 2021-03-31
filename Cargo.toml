@@ -1,0 +1,2 @@
+[workspace]
+members = ["src/orchestrator", "src/clockwork", "src/cuda_manager", "src/agile_infer"]
